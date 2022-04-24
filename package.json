@@ -10,8 +10,8 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.16.1"
   },
-  "name": "gp-penguin",
-  "description": "edit for testing purposes second edit for testing purpose f/stuart branch",
+  "name": "penguin-xp",
+  "description": "group event planning app",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -20,13 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stuart-rickard/gp-penguin.git"
+    "url": "git+https://github.com/stuart-rickard/penguin-xp.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stuart-rickard/gp-penguin/issues"
+    "url": "https://github.com/stuart-rickard/penguin-xp/issues"
   },
-  "homepage": "https://github.com/stuart-rickard/gp-penguin#readme",
+  "homepage": "https://github.com/stuart-rickard/penguin-xp#readme",
   "devDependencies": {}
 }

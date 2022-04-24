@@ -1,13 +1,13 @@
-# PENGUIN PLANNER
+# PENGUIN-XP PLANNER
 
 ## Purpose
 
-The purpose of this project is to build a full-stack-web-application where users can easily find a time when a group of people can get together.
-This site is built completely from scratch and is deployed to Heroku. The application follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. It also utilizes SendGrid, a cloud-based SMTP (Simple Mail Transfer Protocol) provider that sends emails withoug having to maintain email servers.
+An app for polling friends in order to set up an event.
 
 ## Requirements
 
-MySQL server if installed locally, or JawsDB if deploying to Heroku
+MySQL server if installed locally, or JawsDB if deploying to Heroku.
+SendGrid
 
 ## Installation and Usage
 
@@ -16,21 +16,20 @@ MySQL server if installed locally, or JawsDB if deploying to Heroku
 2. Clone or download the source code from GitHub to your local machine:
 
 ```shell
-git@github.com:stuart-rickard/gp-penguin.git
+git@github.com:stuart-rickard/penguin-xp.git
 ```
 
 3. Navigate to the root of the downloaded code by typing:
 
 ```shell
-cd gp-penguin
+cd penguin-xp
 ```
 
 4. Install required dependencies by opening a terminal and on command line type:
 
 ```shell
 npm init -y (set "main": "server.js", "start": "node server.js")
-npm install express sequelize mysql2
-npm install dotenv
+npm install
 ```
 
 5. Create the .env file and open the file by typing:
@@ -40,12 +39,14 @@ touch .env
 code .env
 ```
 
-6. Add the following to the .env file:
+6. Add the following to the .env file (you'll need to provide your own values to the blank strings):
 
 ```shell
-DB_NAME='penguin_db'
-DB_USER=''
-DB_PW=''
+DB_NAME = 'penguin_db'
+DB_USER = ''
+DB_PW = ''
+SESS_PW = ''
+SENDGRID_API_KEY = ''
 ```
 
 7. Navigate to the MySQL shell and enter:
@@ -70,13 +71,9 @@ npm run seed
 npm start
 ```
 
-## Screenshot
-
-![penguin planner](./public/images/penguin-planner.PNG)
-
 ## Deployed Demo
 
-https://penguin-planner.herokuapp.com/
+https://penguin-xp.herokuapp.com/
 
 ## Built With
 
@@ -104,12 +101,4 @@ SendGrid
 
 ## Contribution
 
-Made with ❤️ by
-Joanne Chun
-Chance Crawford
-Brian Esparza
-Noah Fabric
-VJ Mariano
-David Reys Santoyo
-Stuart Rickard
-Kevin Rivera
+This app began as a group project for a coding bootcamp with these team members: Joanne Chun, Chance Crawford, Brian Esparza, Noah Fabric, VJ Mariano, David Reys Santoyo, Stuart Rickard, and Kevin Rivera ([group project repo](https://github.com/stuart-rickard/gp-penguin)).
